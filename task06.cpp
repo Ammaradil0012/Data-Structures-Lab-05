@@ -4,7 +4,7 @@ int recursiveArraySum(int* arr[], int sizes[], int dim) {
     if (dim == 1) {
         int total = 0;
         for (int i = 0; i < sizes[0]; i++) {
-            total += arr[i][0];
+            total += arr[0][i];
         }
         return total;
     }
@@ -23,3 +23,4 @@ int main() {
     int size[] = {2, 3};
     std::cout << recursiveArraySum(matrix, size, 2);
 }
+
